@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* 초기화 작업 */
+
+form {
+    margin: 120px auto;
+    padding: 20px;
+    max-width: 500px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+h2 {
+    margin: 0 0 20px;
+    text-align: center;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+input[type="text"],
+input[type="password"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+input[type="submit"] {
+    background-color: #8c8c8c;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #c8c8c8;
+}
+form > p {
+    float: right;
+    line-height: 41px;
+}
+form > p a:hover {
+    background-color: #c8c8c8;
+}
+form .join {
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #8c8c8c;
+    border-radius: 5px;
+}
+form .find {
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #8c8c8c;
+    border-radius: 5px;
+}
