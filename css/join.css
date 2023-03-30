@@ -1,0 +1,140 @@
+@charset "utf-8";
+/*회원가입 영역*/
+#memberWrap {
+    width: 1024px;
+    position: relative;
+    margin: 100px auto;
+}
+#memberArea {
+    display: inline-block;
+    width: 650px;
+    position: relative; 
+}
+#memberArea h2 {
+    font-size: 1.5em;
+    color: #555;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid #ccc;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.formSign {
+    text-align: right;
+    margin: 30px 0 10px;
+}
+.require {
+    color: #ff6738;
+}
+#joinForm {
+    border-top: 2px solid #ccc;
+}
+#joinForm p {
+    border-bottom: 1px solid #ccc;
+    position: relative; /*자식들의 위치를 잡기위한 부모 position*/
+    overflow: hidden; /*float을 했기때문에 다른것들이 따라 올라오지 못하도록 하는 명령*/
+}
+#joinForm label{
+    float: left; /*label은 인라인 레벨 요소이지만 float을 주면 전부 다닥다닥 붙기때문에 인라인 블록 레벨요소로 변하여 범위를 가질 수 있게 된다.*/
+    width: 120px;
+    padding: 13px 20px;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #666;
+}
+#joinForm input {
+    margin: 10px 0;
+}
+#joinForm input:not([type="radio"]) { /*라디오 버튼이 아닌 input태그*/
+    border: 1px solid #ccc;
+    height: 18px;
+    padding-left: 5px;
+}
+#joinForm input[type="radio"] { /*라디오 버튼*/
+    margin: 0;
+}
+a.idCheck {
+    position: relative;
+    top: 2px;
+}
+a.idCheck, a.findZipcode {
+    font-size: 0.9em;
+    background-color: #555;
+    color: #fff;
+    padding: 3px 15px;
+    margin-left: 5px;
+    border-radius: 8px;
+    text-decoration: none;
+    background: linear-gradient(to bottom, rgba(98,98,98,0.8) 0%, rgb(98,98,98) 50%,
+    rgb(81,81,81) 100%);
+}
+a.findZipcode {
+    position: absolute; /*절대위치에서*/
+    left: 260px;
+    top: 8px;
+}
+input#address { /*띄어쓰기ㄴ*/
+    display: block;
+    margin: 0;
+}
+.labelAddress {
+    height: 50px;
+    line-height: 50px; /*높이만큼 줄간격을 주면 한줄은 중앙으로 오도록 할 수 있다.*/
+}
+.btnJoinArea{   /*회원가입 / 취소 버튼*/
+    text-align: center;
+    margin: 15px 0;
+}
+.btnJoinArea button{
+    font-size: 1.2em;
+    color: #fff;
+    padding: 8px 20px; /*버튼의 크기를 늘리기 위한 값*/
+    border: 0;  /*gradient를 넣을 예정*/
+    margin: 0 5px;  /*버튼 끼리의 거리를 벌리기 위한 값*/
+    border-radius: 3px; 
+    letter-spacing: 1px;    /*자간(글자간격)*/
+    cursor: pointer;
+}
+.btnOk{
+    background: linear-gradient(to bottom, rgba(98,98,98,0.8) 0%, rgb(98,98,98) 50%,
+    rgb(81,81,81) 100%);
+}
+.btnOk:hover {
+    background: linear-gradient(to bottom, rgba(84, 131, 218, 0.8) 0%,
+    rgb(29, 185, 185) 50%, rgb(71, 166, 221) 100%);
+}
+
+.btnCancle{
+    background: linear-gradient(to bottom, rgba(145, 145, 145, 0.8) 0%,
+    rgb(145,145,145) 50%, rgb(81,81,81) 100%);
+}
+.btnCancle:hover {
+    background: linear-gradient(to bottom, rgba(84, 131, 218, 0.8) 0%,
+    rgb(29, 185, 185) 50%, rgb(71, 166, 221) 100%);
+}
+
+/*회원가입 영역 종료*/
+/*오른 쪽 배너 영역*/
+.rightBanner::before {
+    content: "";
+    position: absolute;
+    left: 670px;
+    top: 10px;
+    height: 100%;
+    width: 5px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #777 0%, #fff 100%);
+}
+
+.rightBanner {
+    display: inline-block;
+    width: 340px;
+}
+.rightBanner a {
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+.rightBanner img {
+    width: 340px;
+}
